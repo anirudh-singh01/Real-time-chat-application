@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Box, Input, Button, HStack, VStack, Text, Avatar } from "@chakra-ui/react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:4000");
+//const socket = io("http://localhost:4000"); //local
+const socket = io("https://real-time-chat-application-8tst.onrender.com"); //deployment
 
 const ChatBox = () => {
   const [messages, setMessages] = useState([]);
